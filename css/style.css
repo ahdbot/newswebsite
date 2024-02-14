@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
+body {
+  font-family: "Almarai", sans-serif !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header .navbar {
+  padding: 10px;
+  border-bottom: 1px solid #B1AEAE;
+  background-color: #fff;
+}
+header .navbar-brand {
+  color: #880000;
+  font-size: 30px;
+}
+header .navbar .nav-link {
+  color: #000;
+  font-size: 20px;
+  margin-right: 20px;
+  transition: all 0.5s ease;
+}
+header .navbar .nav-link:hover {
+  color: #880000;
+  text-decoration: underline;
+}
+header .navbar .login {
+  position: relative;
+}
+header .navbar .login i {
+  font-size: 30px;
+  margin-left: 15px;
+  color: #B1AEAE;
+  cursor: pointer;
+}
+header .navbar .login-container {
+  position: absolute;
+  width: 250px;
+  height: 80px;
+  background-color: #fff;
+  border: 1px solid #B1AEAE;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  top: 52px;
+  right: -112px;
+  visibility: hidden;
+  transform: all 0.5s ease;
+}
+header .navbar .login-container::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  transform: rotate(45deg) translateX(50%);
+  top: -18px;
+  right: 50%;
+  border-top: 1px solid #B1AEAE;
+  border-left: 1px solid #B1AEAE;
+}
+header .navbar .login-container .button {
+  background-color: #880000;
+  color: #fff;
+  border: 1px solid #880000;
+  padding: 2px 30px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+header .navbar .login-container .button:hover {
+  background-color: #fff;
+  color: #880000;
+}
+header .navbar .login:hover .login-container {
+  visibility: visible;
+}
+header .navbar .login:hover .login-container .button {
+  visibility: visible;
+}
+header .navbar form .search-icon {
+  padding: 2px;
+}
+header .navbar form .search-icon i {
+  font-size: 30px;
+  color: #880000;
+}
+header .header-news {
+  margin-top: 50px;
+}
+header .header-news .carousel-news {
+  margin-top: 50px;
+  position: relative;
+}
+header .header-news .carousel-news::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 200px;
+  background-color: #880000;
+  top: 89px;
+  left: -10px;
+}
+header .header-news .carousel-text {
+  padding: 20px 10px 70px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 750px;
+}
+header .header-news .carousel-text h3 {
+  font-size: 22px;
+  position: relative;
+}
+header .header-news .carousel-text h3::after {
+  content: "";
+  position: absolute;
+  height: 85px;
+  width: 5px;
+  background-color: #880000;
+  top: -10px;
+  left: 250px;
+}
+header .header-news .carousel-indicators {
+  left: -550px;
+}
+header .header-news .carousel-indicators button {
+  height: 20px;
+  width: 20px;
+  text-indent: 0px;
+}
+header .header-news .carousel-item img {
+  max-height: 490px;
+}
+header .header-news .carousel-item:hover .carousel-text {
+  text-decoration: underline;
+}
+header .header-news .header-articles {
+  margin-top: 50px;
+}
+header .header-news .header-articles .row {
+  margin-top: 40px;
+}
+
+img {
+  width: 100%;
+}
+
+.article-category {
+  padding: 5px 10px;
+  background-color: #880000;
+  color: #fff;
+}
+.article-title {
+  font-size: 20px;
+  display: inline;
+  color: #000;
+}
+.article-link {
+  text-decoration: none;
+  color: #000;
+}
+.article-link:hover .article-title {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
