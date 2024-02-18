@@ -81,6 +81,24 @@ header .navbar .login:hover .login-container {
 header .navbar .login:hover .login-container .button {
   visibility: visible;
 }
+header .navbar .login-button .button {
+  background-color: #880000;
+  color: #fff;
+  border: 1px solid #880000;
+  padding: 2px 30px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-size: 16px;
+  width: 50%;
+  margin: 15px auto;
+  text-align: center;
+  display: none;
+}
+header .navbar .login-button .button:hover {
+  background-color: #fff;
+  color: #880000;
+}
 header .navbar form .search-icon {
   padding: 2px;
 }
@@ -122,7 +140,7 @@ header .header-news .carousel-text h3::after {
   position: absolute;
   height: 85px;
   width: 5px;
-  background-color: #880000;
+  background-color: #b80000;
   top: -10px;
   left: 250px;
 }
@@ -415,6 +433,129 @@ footer .footer-brand {
   color: #880000;
   font-size: 30px;
   margin: auto;
+}
+
+@media (max-width: 1400px) {
+  header .header-news .carousel-item h3 {
+    font-size: 20px !important;
+  }
+  header .header-news .carousel-item h3::after {
+    left: 280px;
+  }
+  header .header-news .carousel-indicators {
+    left: -480px;
+  }
+  .article-title {
+    font-size: 14px;
+  }
+  .article-category {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1200px) {
+  header .header-news .carousel-item h3::after {
+    left: 340px;
+  }
+  header .header-news .carousel-indicators {
+    left: -400px;
+  }
+  header .header-news .carousel-news::after {
+    height: 170px;
+    top: 100px;
+  }
+  header .header-news::after {
+    height: 170px;
+    top: 100px;
+  }
+  section.news .article-link .article-text h5 {
+    font-size: 16px;
+  }
+  section.most-read .card-text h4 {
+    font-size: 22px;
+  }
+  section-opinions .opnion-card {
+    padding: 15px;
+  }
+  section-opinions .opnion-card .user-info img {
+    width: 85px;
+  }
+  .article-title {
+    font-size: 14px;
+  }
+  .article-category {
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  header .header-news .carousel-item h3::after {
+    display: none;
+  }
+  header .header-news .carousel-indicators {
+    left: 0px;
+  }
+  header section.most-read .card-news {
+    padding: 25px;
+  }
+  header section.most-read .card-text h4 {
+    font-size: 16px;
+  }
+  header section.most-read .card-text p {
+    font-size: 12px;
+    margin: 25px auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  header section.most-read .card-text time {
+    font-size: 12px;
+  }
+  header section.most-read .card-img::after {
+    height: 20px;
+    bottom: -10px;
+  }
+  header section.latest-news .article-title {
+    font-size: 14px;
+  }
+  header section.latest-news .article-category {
+    font-size: 12px;
+  }
+  header section.latest-news p {
+    font-size: 14px;
+  }
+  header .login {
+    display: none;
+  }
+  header .navbar .login-button .button {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  header .header-news .carousel-news::after {
+    display: none;
+  }
+  section.most-read .card-news {
+    padding: 15px;
+  }
+  section.most-read .card-img::after {
+    display: none;
+  }
+  section.videos .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .footer-title {
+    color: #880000;
+    margin-top: 20px;
+  }
+  footer .footer-title::after {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
