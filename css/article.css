@@ -117,4 +117,97 @@
   color: #880000;
 }
 
+.related-article .button {
+  background-color: #880000;
+  color: #fff;
+  border: 1px solid #880000;
+  padding: 2px 30px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-size: 22px;
+  margin-top: 25px;
+}
+.related-article .button:hover {
+  background-color: #fff;
+  color: #880000;
+}
+
+.most-read-article {
+  position: relative;
+  margin-top: 25px;
+}
+.most-read-article:hover h4 {
+  text-decoration: underline;
+}
+.most-read-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.most-read-text time {
+  color: #B1AEAE;
+}
+.most-read-text h4.article-title {
+  font-size: 22px;
+  display: block;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .most-read-text h4.article-title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .article-header header-category {
+    font-size: 16px;
+  }
+  .article-header .header-title h2 {
+    font-size: 22px;
+  }
+  .article-main .article-datetime {
+    padding: 5px;
+  }
+  .article-main .article-datetime time {
+    font-size: 16px;
+  }
+  .article-main .article-body p {
+    font-size: 18px;
+  }
+  .article-main .article-body h3 {
+    font-size: 24px;
+  }
+  .article-main .article-body .keyword {
+    font-size: 18px;
+    padding: 8px 20px;
+  }
+  .article-main .comments .comment-card .comment-text span {
+    font-size: 16px;
+  }
+  .article-main .comments .comment-card .comment-text p {
+    font-size: 14px;
+  }
+  .article-main .related-article .col-sm-4 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .article-main .suggested-stories {
+    margin-bottom: 20px;
+  }
+  .article-main .suggested-stories .story-card {
+    margin-top: 20px !important;
+  }
+  .article-main .article-body iframe {
+    height: 215px;
+    width: 390px;
+  }
+  .article-main .article-body .suggested-stories .story-card .col-sm-8 p {
+    position: relative;
+  }
+}
+
 /*# sourceMappingURL=article.css.map */
