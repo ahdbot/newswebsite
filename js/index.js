@@ -13,6 +13,8 @@ const changeSlideView = (slide) => {
     });
 }
 
+
+
 const handleOrientationChange = (e) => {
     if (mql.matches) {
         changeSlideView(1);
