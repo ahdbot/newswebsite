@@ -1,30 +1,25 @@
-const mql = window.matchMedia("(max-width: 992px)");
+var scrollpos = window.scrollY;
+var navbar = document.getElementById("navbar");
 
-const changeSlideView = (slide) => {
-    var swiper = new Swiper(".swiper", {
-        slidesPerView: slide,
-        spaceBetween: 30,
-        autoplay: true,
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
+function add_class_on_scroll() {
+    navbar.classList.add("navbar-small");
 }
 
+function remove_class_on_scroll() {
+    navbar.classList.remove("navbar-small");
+}
 
+window.addEventListener('scroll', function () {
+    //Here you forgot to update the value
+    scrollpos = window.scrollY;
 
-const handleOrientationChange = (e) => {
-    if (mql.matches) {
-        changeSlideView(1);
-    } else {
-        changeSlideView(3);
+    if (scrollpos > 10) {
+        add_class_on_scroll();
     }
-}
+    else {
+        remove_class_on_scroll();
+    }
+});
 
-handleOrientationChange();
 
-mql.onchange = (e) => {
-    handleOrientationChange(e);
-}
+document.getElementById("#year").innerHTML = new Date().getFullYear;

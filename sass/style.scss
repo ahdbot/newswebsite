@@ -71,6 +71,7 @@ header {
 
         .button {
           @include button($main-color, $white-color, $main-color);
+          visibility: hidden;
         }
       }
 
@@ -514,17 +515,17 @@ footer {
       }
     }
 
-    &.most-read  {
+    &.most-read {
       .card-text {
-         h4 {
+        h4 {
           font-size: 22px;
-         }
+        }
       }
     }
     &-opinions {
       .opnion-card {
         padding: 15px;
-  
+
         .user-info {
           img {
             width: 85px;
@@ -562,54 +563,52 @@ footer {
     }
     section {
       &.most-read {
-          .card {
-              &-news {
-                  padding: 25px;
-              }
-
-              &-text {
-                  h4 {
-                      font-size: 16px;
-                  }
-                  p {
-                      font-size: 12px;
-                      margin: 25px auto;
-                      overflow: hidden;
-                      text-overflow: ellipsis;
-                      display: -webkit-box;
-                      -webkit-line-clamp: 3; 
-                              line-clamp: 3; 
-                      -webkit-box-orient: vertical;
-                  }
-                  time {
-                      font-size: 12px;
-                  }
-              }
-
-              &-img::after {
-                  height: 20px;
-                  bottom: -10px;
-              }
+        .card {
+          &-news {
+            padding: 25px;
           }
+
+          &-text {
+            h4 {
+              font-size: 16px;
+            }
+            p {
+              font-size: 12px;
+              margin: 25px auto;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 3;
+              line-clamp: 3;
+              -webkit-box-orient: vertical;
+            }
+            time {
+              font-size: 12px;
+            }
+          }
+
+          &-img::after {
+            height: 20px;
+            bottom: -10px;
+          }
+        }
       }
 
       &.latest-news {
-          .article-title {
-              font-size: 14px;
-          }
+        .article-title {
+          font-size: 14px;
+        }
 
-          .article-category {
-              font-size: 12px;
-          }
+        .article-category {
+          font-size: 12px;
+        }
 
-          p {
-              font-size: 14px;
-          }
+        p {
+          font-size: 14px;
+        }
       }
-  }
+    }
 
-
-    
     .login {
       display: none;
     }
@@ -636,18 +635,15 @@ footer {
     &.most-read {
       .card-news {
         padding: 15px;
-
       }
       .card-img::after {
-display: none;
+        display: none;
       }
     }
 
     &.videos {
       .swiper {
         &-pagination {
-          
-  
           &-bullet {
             width: 15px;
             height: 15px;
@@ -670,3 +666,7 @@ display: none;
   }
 }
 
+.navbar-small {
+  padding: 0px !important;
+  transition: all 0.5s;
+}
