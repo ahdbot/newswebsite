@@ -2,18 +2,18 @@ var scrollpos = window.scrollY;
 var navbar = document.getElementById("navbar");
 
 function add_class_on_scroll() {
-    navbar.classList.add("navbar-small");
+  navbar.classList.add("navbar-small");
 }
 
 function remove_class_on_scroll() {
-    navbar.classList.remove("navbar-small");
+  navbar.classList.remove("navbar-small");
 }
 
-window.addEventListener('scroll', function () {
-    //Here you forgot to update the value
+window.addEventListener('scroll', function(){ 
+ 
     scrollpos = window.scrollY;
 
-    if (scrollpos > 10) {
+    if( scrollpos > 10 ){
         add_class_on_scroll();
     }
     else {
@@ -21,5 +21,4 @@ window.addEventListener('scroll', function () {
     }
 });
 
-
-document.getElementById("#year").innerHTML = new Date().getFullYear;
+document.getElementById("year").innerHTML = new Date().getFullYear()
